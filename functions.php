@@ -1,6 +1,7 @@
 <?php
 /**
 * L'ensemble des fonctions du thème
+* comment php
 */
 function enfiler_css(){
 
