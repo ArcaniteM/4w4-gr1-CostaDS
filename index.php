@@ -1,6 +1,6 @@
 <?php /** index par defaut du theme */ ?>
 <?php get_header(); ?>
-<body>
+
     <main>
     <pres>index.php</pres>
         <h1>Bienvenue sur 4W4</h1>
