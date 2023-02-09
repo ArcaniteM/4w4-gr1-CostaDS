@@ -22,6 +22,8 @@
   
   body {
     margin: 0;
+    background-color: bisque;
+
   }
   
   /**
@@ -30,6 +32,7 @@
   
   main {
     display: block;
+    padding-left: 5em;
   }
   
   /**
@@ -75,6 +78,7 @@
   
   a {
     background-color: transparent;
+    text-decoration: none;
   }
   
   /**
