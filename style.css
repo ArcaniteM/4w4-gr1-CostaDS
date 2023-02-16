@@ -390,13 +390,6 @@ ol {
   padding: 3px;
   color: #444;
 }
-@media screen and (min-width: 400px) {
-  ul,
-ol {
-    margin: 1rem 0.5rem;
-    padding: 10px;
-  }
-}
 @media screen and (min-width: 700px) {
   ul,
 ol {
@@ -407,11 +400,35 @@ ol {
 
 ul {
   list-style-type: circle;
+  display: block;
+  margin-left: -10px;
+}
+
+ul li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+ul li:before {
+  content: "";
+  position: absolute;
+  top: 1.2em;
+  left: -30px;
+  margin-top: -0.9em;
+  background: linear-gradient(45deg, #9986ce, #f9dd94);
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
 }
 
 ul li,
 ol li {
   margin: 0.5rem 0rem;
+  display: block;
+  position: relative;
+}
+
+ul li ul li {
+  margin-left: 2rem;
 }
 
 pre {
