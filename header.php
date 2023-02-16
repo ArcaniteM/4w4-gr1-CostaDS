@@ -12,13 +12,15 @@
 </head>
 <body>
     <header class="site__entete">
-    <?php the_custom_logo(); ?> 
-       <?php  wp_nav_menu(array(
-                    "menu" => "entete",
-                    "container" => "nav",
-                    "container_class" => "menu__entete"
-                 )); ?>
-        <h1><a class="site__titre" href="<?= bloginfo('url'); ?>"><?= bloginfo('name'); ?></a></h1>
-        <h2><?= bloginfo('description'); ?></h2>
+    <section class="entete__nav">
+            <?php the_custom_logo(); ?> 
+            <?php  wp_nav_menu(array( 
+                            "menu" => "entete",
+                            "container" => "nav",
+                            "container_class" => "menu__entete"
+            )); ?>
+    </section>
+    <h1 class="site__titre"><a  href="<?= bloginfo('url'); ?>"><?= bloginfo('name'); ?></a></h1>
+    <h2 class="site__description"><?= bloginfo('description'); ?></h2>
 </header>
     

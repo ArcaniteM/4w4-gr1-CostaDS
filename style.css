@@ -385,6 +385,12 @@ p {
 }
 
 /* --------------------------------------------- composant */
+.entete__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .site__titre {
   text-decoration: none;
 }
