@@ -1,4 +1,4 @@
-<?php /** front page par defaut du theme */ ?>
+<?php /** category par defaut du theme */ ?>
 <?php get_header(); ?>
 
 <main>

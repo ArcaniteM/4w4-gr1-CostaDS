@@ -6,24 +6,20 @@
 
 }
 
-.site__titre {
-    text-decoration: none;
+// .site__titre {
+//     font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
+//     font-size: 3em;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
     
-}
-.site__titre {
-    font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
-    font-size: 3em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    background-image: conic-gradient(#9986ce 20%, #ee4b2b 50%, #ee4b2b 60%, #00c2cb 60%, #a699cb);
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
+//     background-image: conic-gradient(#9986ce 20%, #ee4b2b 50%, #ee4b2b 60%, #00c2cb 60%, #a699cb);
+//     color: transparent;
+//     background-clip: text;
+//     -webkit-background-clip: text;
     
 
-}
+// }
 
 h1 {
     display: flex;
@@ -42,6 +38,19 @@ h1 {
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 
 
+}
+
+h1 a {
+    font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-image: conic-gradient(#9986ce 20%, #ee4b2b 50%, #ee4b2b 60%, #00c2cb 60%, #a699cb);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 h1:hover {
