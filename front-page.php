@@ -1,8 +1,8 @@
 <?php /** index par defaut du theme */ ?>
 <?php get_header(); ?>
 
-    <main>
-        <pres>front-page.php</pres>
+<main>
+        <pre>front-page.php</pre>
         <h1>Bienvenue sur 4W4</h1>
         <section class="blocflex">
             <?php if(have_posts()):
@@ -16,8 +16,9 @@
                 <?php endwhile; ?>
             <?php  endif; ?>
         </section>
-         
     </main>
+
     <?php get_footer(); ?>
+	
 </body>
 </html>
