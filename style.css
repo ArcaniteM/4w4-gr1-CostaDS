@@ -518,6 +518,11 @@ article h3 a {
   color: #553c9a;
 }
 
+article h4 {
+  text-decoration: none;
+  color: #9986ce;
+}
+
 .blocflex {
   display: flex;
   justify-content: space-between;
