@@ -504,6 +504,20 @@ h1:hover {
   color: rgb(0, 0, 0);
 }
 
+article {
+  box-shadow: #ee4b2b 5px 5px, rgba(0, 194, 203, 0.7333333333) 10px 10px, rgba(153, 134, 206, 0.4745098039) 15px 15px, rgba(153, 134, 206, 0.0666666667) 25px 25px;
+}
+
+article h3 {
+  text-decoration: none;
+  color: #553c9a;
+}
+
+article h3 a {
+  text-decoration: none;
+  color: #553c9a;
+}
+
 .blocflex {
   display: flex;
   justify-content: space-between;
