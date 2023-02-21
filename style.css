@@ -431,6 +431,18 @@ ul li ul li {
   margin-left: 2rem;
 }
 
+.menu-item a {
+  padding: 0;
+}
+
+.menu-item::before {
+  content: "";
+  background: transparent;
+  border-radius: 0;
+  padding-inline: 0;
+  margin-inline-end: 0;
+}
+
 pre {
   background-color: #555;
   color: #eee;

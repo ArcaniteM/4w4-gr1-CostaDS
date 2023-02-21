@@ -47,6 +47,20 @@ ul li ul li {
 
 }
 
+.menu-item {
+    a {
+        padding: 0;
+    }
+}
+
+.menu-item::before {
+    content: "";
+    background: transparent;
+    border-radius: 0;
+    padding-inline: 0;
+    margin-inline-end: 0;
+}
+
 // li > ol {}
 // li > ul {}
 
