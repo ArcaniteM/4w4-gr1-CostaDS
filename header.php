@@ -36,6 +36,7 @@
         else {
             $menu = "note-4w4";
         }
+        // $menu peut prendre les valeurs : "note-4w4" ou "cours"
 
         echo $menu;
         wp_nav_menu(array(
