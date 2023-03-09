@@ -13,20 +13,39 @@ Mise en page générale avec display:grid
 
 .site__main {
     grid-area: main;
-    // padding: 1rem clamp(1rem, 3vw, 20rem);
-    background-color: rgb(144, 177, 218);
+    padding: 1rem clamp(1rem, 3vw, 20rem);
+    
 }
 
 .site__footer{
     grid-area: footer;
-    // padding: 1rem clamp(1rem, 3vw, 20rem);
+    padding: 1rem clamp(1rem, 3vw, 20rem);
     background-color: rgb(10, 42, 80);
 }
 
 .site__aside{
     grid-area: aside;
-    // padding: 1rem clamp(1rem, 3vw, 20rem);
-    background-color: rgb(139, 228, 173);
+    padding-left: 1.5em;
+    background-color: rgb(250, 210, 160);
+    font-size: 1.7vw;
+
+    text-decoration: none;
+    border-left: 0.5em solid red;
+    //width: 100%;
+}
+
+.site__aside nav ul {
+  padding-left: 0;
+  margin-bottom: 1em;
+  color: #b43434;
+  width: fit-content;
+}
+
+.site__aside nav ul :hover {
+  padding: 0.1em;
+  box-shadow: inset 5000px 0 0 0 #b43434;
+  color:bisque;
+  
 }
 
 
@@ -45,5 +64,30 @@ Mise en page générale avec display:grid
         "header header"
         "aside main"
         "footer footer";
+    }
+
+    @media screen and (min-width:500px) {
+      grid-template-columns: 15% auto; 
+      grid-template-areas:
+      "header header"
+      "aside main"
+      "footer footer";
+    }
+  }
+
+  .no-aside{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    //row-gap: 50px;
+    @media screen and (min-width:1000px) {
+        grid-template-columns:auto; 
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
     }
   }

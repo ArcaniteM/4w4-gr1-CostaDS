@@ -85,7 +85,9 @@ h1:hover {
 }
 
 article {
-    
+    margin-bottom: 3em;
+    background-color: rgb(250, 210, 160);
+    padding: 0.5em;
 
     box-shadow: #ee4b2b 5px 5px, 
         #00c2cbbb 10px 10px, 
@@ -107,4 +109,9 @@ article h3 a {
 article h4 {
     text-decoration: none;
     color:#9986ce;
+}
+
+article p {
+    padding-bottom: 1em;
+
 }

@@ -40,9 +40,18 @@ function cidweb_modifie_requete_principal( $query ) {
         if (    $query->is_home() //si page d acceuil
                 && $query->is_main_query() //si requette principale 
                 && ! is_admin() ) { //si pas dans le tableau de bord
-          $query->set( 'category_name', 'note4w4' ); //filtre les articles de categorie note 4w4 (slug)
+          $query->set( 'category_name', 'note-4w4' ); //filtre les articles de categorie note 4w4 (slug)
           $query->set( 'orderby', 'title' );
           $query->set( 'order', 'ASC' );
           }
          }
-         add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' );
+add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' );
+
+function perso_menu_item_title($title, $item, $args, $depth) {
+                // Remplacer 'nom_de_votre_menu' par l'identifiant de votre menu
+        if($args->menu == 'cours') {// on filtre uniquement le menu <cours>    // Modifier la longueur du titre en fonction de vos besoins
+            $title = wp_trim_words($title, 3, ' ... ');
+        }
+        return $title;
+}
+add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 4);
