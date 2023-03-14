@@ -1,5 +1,5 @@
 /*
-Theme Name: 4w4 Eddy martin
+Theme Name: 4w4gr1 test
 Theme URI: https://github.com/eddytuto/2023-4w4-gr1
 Author: Eddy Martin
 Version: 1.0.0
@@ -10,7 +10,7 @@ Tested up to: 6.1.1
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: 4w4-Eddy-martin
+Text Domain: 4w4-gr1-Eddy-martin
 */
 
 @import "variable/dimension";
@@ -25,9 +25,11 @@ Text Domain: 4w4-Eddy-martin
 // @import "base/list";
 
 /* --------------------------------------------- composant */
-@import "composant/entete";
-@import "composant/blocflex";
-@import "composant/recherche";
+ @import "composant/entete";
+ @import "composant/blocflex";
+ @import "composant/recherche";
+ @import "composant/burger";
+ @import "composant/menu_cours";
 
-/* --------------------------------------------- layout */
+ /* --------------------------------------------- layout */
  @import "layout/aside-contenu";

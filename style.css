@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Theme Name: 4w4 Eddy martin
+Theme Name: 4w4gr1 test
 Theme URI: https://github.com/eddytuto/2023-4w4-gr1
 Author: Eddy Martin
 Version: 1.0.0
@@ -11,7 +11,7 @@ Tested up to: 6.1.1
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: 4w4-Eddy-martin
+Text Domain: 4w4-gr1-Eddy-martin
 */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -456,78 +456,93 @@ pre {
   align-items: center;
 }
 
-h1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: conic-gradient(#553c9a 30%, #ee4b2b 40%, #ee4b2b 70%, #00c2cb 80%, #553c9a);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  box-shadow: inset 0 0 0 0 #000000;
-  margin: 0 -0.25rem;
-  padding: 0 0.25rem;
-  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-h1 a {
+.site__titre {
   font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
-  font-size: 3em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: conic-gradient(#9986ce 20%, #ee4b2b 50%, #ee4b2b 60%, #00c2cb 60%, #a699cb);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
+  font-family: "Smokum", cursive;
+}
+.site__titre a {
+  text-decoration: none;
 }
 
-h1:hover {
-  box-shadow: inset 5000px 1 1 1 #b43434;
-  color: rgb(0, 0, 0);
+.menu__recherche {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+@media screen and (min-width: 1000px) {
+  .menu__recherche {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
 }
 
 /* ///////////////////////////////// menu__entete */
+.menu__entete {
+  /*
+      position:absolute;
+      top: 100px;
+      right: 0;
+      */
+  transform: translateX(300px);
+  transition: transform 0.5s;
+}
+@media screen and (min-width: 800px) {
+  .menu__entete {
+    transform: translateX(0);
+  }
+}
 .menu__entete .menu {
-  font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
   display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   list-style-type: none;
-  justify-content: flex-end;
+}
+@media screen and (min-width: 800px) {
+  .menu__entete .menu {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 .menu__entete .menu .menu-item a {
-  padding: 5px 20px;
+  display: block;
+  padding: 3px 5px;
   text-decoration: none;
-  border-left: 0.1em solid red;
-}
-.menu__entete .menu .menu-item a:hover {
-  box-shadow: inset 5000px 0 0 0 #b43434;
-  color: rgb(0, 0, 0);
 }
 
-article {
-  margin-bottom: 3em;
-  background-color: rgb(250, 210, 160);
-  padding: 0.5em;
-  box-shadow: #ee4b2b 5px 5px, rgba(0, 194, 203, 0.7333333333) 10px 10px, rgba(153, 134, 206, 0.4745098039) 15px 15px, rgba(153, 134, 206, 0.0666666667) 25px 25px;
+/* ---------------------------------------- pour annuler le pseude element ::before */
+.menu .menu-item::before {
+  content: "";
+  background: transparent;
+  border-radius: 0;
+  padding-inline: 0;
+  margin-inline-end: 0;
+  width: 0;
+  height: 0;
 }
 
-article h3 {
-  text-decoration: none;
-  color: #553c9a;
+ul li li::before {
+  background: transparent;
+  content: "";
 }
 
-article h3 a {
-  text-decoration: none;
-  color: #553c9a;
+/* ---------------------------------------------------------- bouton burger  */
+.burger {
+  border: 1px solid #aaa;
+  display: block;
+}
+@media screen and (min-width: 800px) {
+  .burger {
+    display: none;
+  }
 }
 
-article h4 {
-  text-decoration: none;
-  color: #9986ce;
+#chkBurger:checked ~ .menu__entete {
+  transform: translateX(0);
 }
 
-article p {
-  padding-bottom: 1em;
+#chkBurger {
+  display: none;
 }
 
 .blocflex {
@@ -545,6 +560,47 @@ article p {
 
 .blocflex__galerie {
   flex: 1 0 100%;
+}
+
+.burger {
+  width: 2.8rem;
+  margin: 10px;
+}
+
+.menu-cours-container .menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+.menu-cours-container .menu .menu-item {
+  flex: 1 0 40px;
+}
+.menu-cours-container .menu .menu-item a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu .menu-item a {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+}
+.menu-cours-container .menu .menu-item a p {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu .menu-item a p {
+    display: block;
+  }
 }
 
 /* --------------------------------------------- layout */
