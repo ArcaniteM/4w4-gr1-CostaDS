@@ -401,7 +401,12 @@ ol {
 ul {
   list-style-type: circle;
   display: block;
-  margin-left: -10px;
+  margin-left: -25px;
+}
+@media screen and (max-width: 699px) {
+  ul {
+    margin-left: -10px;
+  }
 }
 
 ul li:not(:last-child) {
@@ -458,7 +463,7 @@ pre {
 
 .site__titre {
   font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
-  font-family: "Smokum", cursive;
+  font-family: "Climate Crisis", cursive;
 }
 .site__titre a {
   text-decoration: none;
@@ -467,7 +472,7 @@ pre {
 .menu__recherche {
   display: flex;
   flex-direction: column-reverse;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 @media screen and (min-width: 1000px) {
   .menu__recherche {
@@ -479,12 +484,8 @@ pre {
 
 /* ///////////////////////////////// menu__entete */
 .menu__entete {
-  /*
-      position:absolute;
-      top: 100px;
-      right: 0;
-      */
-  transform: translateX(300px);
+  font-size: 3em;
+  transform: translateX(3000px);
   transition: transform 0.5s;
 }
 @media screen and (min-width: 800px) {
@@ -492,11 +493,17 @@ pre {
     transform: translateX(0);
   }
 }
+@media screen and (max-width: 700px) {
+  .menu__entete {
+    font-size: 1em;
+  }
+}
 .menu__entete .menu {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   list-style-type: none;
+  border-left: 4px solid black;
 }
 @media screen and (min-width: 800px) {
   .menu__entete .menu {
@@ -506,8 +513,15 @@ pre {
 }
 .menu__entete .menu .menu-item a {
   display: block;
-  padding: 3px 5px;
-  text-decoration: none;
+  padding: 10px 10px;
+  border-left: 1px solid #b43434;
+  margin-left: 0.2em;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 /* ---------------------------------------- pour annuler le pseude element ::before */
@@ -543,6 +557,57 @@ ul li li::before {
 
 #chkBurger {
   display: none;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: conic-gradient(#553c9a 30%, #ee4b2b 40%, #ee4b2b 70%, #00c2cb 80%, #553c9a);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  box-shadow: inset 0 0 0 0 #000000;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+h1 a {
+  font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
+  font-size: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: conic-gradient(#9986ce 20%, #ee4b2b 50%, #ee4b2b 60%, #00c2cb 60%, #a699cb);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+h1:hover {
+  box-shadow: inset 5000px 1 1 1 #b43434;
+  color: rgb(0, 0, 0);
+}
+
+article {
+  padding-left: 3em;
+  box-shadow: #ee4b2b 5px 5px, rgba(0, 194, 203, 0.7333333333) 10px 10px, rgba(153, 134, 206, 0.4745098039) 15px 15px, rgba(153, 134, 206, 0.0666666667) 25px 25px;
+}
+
+article h3 {
+  text-decoration: none;
+  color: #553c9a;
+}
+
+article h3 a {
+  text-decoration: none;
+  color: #553c9a;
+}
+
+article h4 {
+  text-decoration: none;
+  color: #9986ce;
 }
 
 .blocflex {
@@ -599,6 +664,42 @@ ul li li::before {
 }
 @media screen and (min-width: 1000px) {
   .menu-cours-container .menu .menu-item a p {
+    display: block;
+  }
+}
+
+.menu-note-4w4-container .menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1000px) {
+  .menu-note-4w4-container .menu {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+.menu-note-4w4-container .menu .menu-item {
+  flex: 1 0 40px;
+}
+.menu-note-4w4-container .menu .menu-item a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+@media screen and (min-width: 1000px) {
+  .menu-note-4w4-container .menu .menu-item a {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+}
+.menu-note-4w4-container .menu .menu-item a p {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .menu-note-4w4-container .menu .menu-item a p {
     display: block;
   }
 }

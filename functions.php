@@ -3,15 +3,15 @@
 * L'ensemble des fonctions du thème
 */
 function enfiler_css() {
-wp_enqueue_style('4w4-gr1-principal', // id
-        get_template_directory_uri() . '/style.css', // adresse url de style.css
-        array(), // définir les dépendances
-        filemtime(get_template_directory() . '/style.css'), // le calcul de la version du fichier css
-        'all'); // media
+        wp_enqueue_style('4w4-gr1-principal', // id
+                get_template_directory_uri() . '/style.css', // adresse url de style.css
+                array(), // définir les dépendances
+                filemtime(get_template_directory() . '/style.css'), // le calcul de la version du fichier css
+                'all'); // media
 
-wp_enqueue_style("google_font",
-                "https://fonts.googleapis.com/css2?family=Smokum&display=swap",
-                false);       
+        wp_enqueue_style("google_font",
+                        "https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap",
+                        false);       
 }  
 
 
