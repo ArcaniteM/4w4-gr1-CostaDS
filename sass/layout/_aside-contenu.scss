@@ -39,6 +39,7 @@ Mise en page générale avec display:grid
   margin-bottom: 1em;
   color: #b43434;
   width: fit-content;
+  
 }
 
 .site__aside nav ul :hover {
@@ -46,6 +47,10 @@ Mise en page générale avec display:grid
   box-shadow: inset 5000px 0 0 0 #b43434;
   color:bisque;
   
+}
+
+.site__aside nav ul li {
+  border: 2px solid #b43434;
 }
 
 
