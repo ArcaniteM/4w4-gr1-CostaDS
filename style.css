@@ -593,6 +593,7 @@ h1:hover {
 
 article {
   padding-left: 3em;
+  padding-bottom: 2em;
   box-shadow: #ee4b2b 5px 5px, rgba(0, 194, 203, 0.7333333333) 10px 10px, rgba(153, 134, 206, 0.4745098039) 15px 15px, rgba(153, 134, 206, 0.0666666667) 25px 25px;
 }
 
