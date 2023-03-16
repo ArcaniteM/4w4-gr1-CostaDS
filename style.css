@@ -501,7 +501,7 @@ pre {
 .menu__entete .menu {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   list-style-type: none;
   border-left: 4px solid black;
 }
@@ -516,6 +516,7 @@ pre {
   padding: 10px 10px;
   border-left: 1px solid #b43434;
   margin-left: 0.2em;
+  background-color: wheat;
 }
 
 form {

@@ -53,7 +53,7 @@
     .menu { // ul
         display:flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: flex-start;
         list-style-type: none;
         border-left: 4px solid black;
         @media screen and (min-width: $largeur__tablette) {
@@ -69,6 +69,7 @@
                     // text-decoration : none;
                     border-left: 1px solid #b43434;
                     margin-left: 0.2em;
+                    background-color: wheat;
                 }
             }
 
