@@ -25,4 +25,4 @@
 - ajout de is_404() dans le if dans header.php pour ajouter "no-aside"
 - ajout de la barre recherche sur la page 404 
 - ajout des menus cours et note 4w4 sur la page 404 
-
+- ajout d une image transparente a la page 404
