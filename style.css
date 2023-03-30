@@ -783,4 +783,8 @@ Mise en page générale avec display:grid
     grid-template-columns: auto;
     grid-template-areas: "header" "main" "footer";
   }
+}
+
+.msg404 {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
