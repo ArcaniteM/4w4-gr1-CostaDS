@@ -10,7 +10,7 @@
 - Couleurs complementaires et chaudes pour ne pas fatiguer les yeux des utilisateurs
 
 #### Liens de référence
-- Site du prof sur **siteground**
+- Site sur **siteground**
     - https://cidweb29.sg-host.com/
 - Github **eddytuto**    
 - https://github.com/ArcaniteM/4w4-gr1-CostaDS
