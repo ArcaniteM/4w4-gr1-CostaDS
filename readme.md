@@ -1,4 +1,4 @@
-# Laboratoire #1
+# Examen Intra
 ## 4W4-Conception d'interfaces et développement Web
 ### Auteur : Dan Sebastian Costa
 
