@@ -10,7 +10,7 @@
 </head>
 <?php
 $nouvel_class="";
- if (is_front_page()) {
+ if (is_front_page() && is_404()) {
     $nouvel_class = "no-aside";
  }?> 
 
@@ -38,7 +38,7 @@ $nouvel_class="";
 </header>
 
 <?php 
-if (! is_front_page()){
+if (! is_front_page() && ! is_404()){
     get_template_part("template-parts/aside"); 
 }
 
