@@ -7,13 +7,13 @@
 }
 
 .blocflex__article {
-        flex : 1 0 250px;	 
-        padding : 5px;	   
-        margin : 10px;	 
-        border : 1px solid #aaa;	  
-    }	
+    flex : 1 0 250px;	 
+    padding : 5px;	   
+    margin : 10px;	 
+    border : 1px solid #aaa;	
+    padding-bottom: 5em;  
+}	
 
 .blocflex__galerie {
-flex : 1 0 100%; 
+    flex : 1 0 100%; 
 }
-
