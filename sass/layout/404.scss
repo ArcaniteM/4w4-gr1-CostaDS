@@ -1,15 +1,24 @@
-.page404 {
-    background-image: url("https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2Nob29sfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
-    background-size: cover;
+main {
+    padding-left: 0;
 }
 
-.page404::before{
-    opacity: 0.35;
+.page404 {
+    background: url("https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2Nob29sfGVufDB8fDB8fA%3D%3D&w=1000&q=80") no-repeat;
+    padding: 0;
+    
+
+}
+
+.content404{
+    background-color: rgb(255,228,196, 0.7);
+    padding: 1em;
+    width: auto;
+    height: auto;
 } 
 
 .msg404 {
     text-align: center;
-    
+    //opacity: 1;
 }
 
 .recherche404 {
@@ -22,10 +31,11 @@
 .menu__array {
     display: inline;
     font-size: 1.3em;
+    //opacity: 1;
 }
 
 .menu__array nav {
-
+    //opacity: 1;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -39,4 +49,5 @@
 .titleNav_404 {
     text-align: center;
     font-size: 1em;
+    //opacity: 1;
 }
