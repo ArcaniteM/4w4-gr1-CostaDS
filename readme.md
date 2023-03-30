@@ -18,3 +18,8 @@
 - Pour visualise sur VC installer  « Markdown preview »
 - Pour activer `ctrl-shift-v`
 - https://developer.wordpress.org/themes/basics/
+
+#### Examen Intra
+- ajout d'un titre a la page 404
+- ajout d'un message pour la page 404 
+
