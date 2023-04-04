@@ -5,6 +5,7 @@
  * 
  */
 $titre = get_the_title();
+if (substr($titre,0,1) == '0'){$titre = substr($titre,1);}
 // retirer le premier du titre d'article de catégorie note-4w4
 // if (substr($titre,0,1) == '0') {}...
 ?>
@@ -12,3 +13,9 @@ $titre = get_the_title();
     <h5><a href="<?php the_permalink(); ?>"> <?= $titre; ?></a></h5>
     <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
 </article>
+<?php
+// the excerpt()  // le résumé du post
+// the_content() // affiche le contenu complet  du post
+
+
+?>

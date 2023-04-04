@@ -14,7 +14,7 @@ $nouvel_class="";
     $nouvel_class = "no-aside";
  }?> 
 
-<body class="site <?= $nouvel_class ?>  ">
+<body class="custom-background site <?= $nouvel_class ?>  ">
     <header class="site__entete">
         <section class="entete__nav">
             <?php the_custom_logo(); ?> 

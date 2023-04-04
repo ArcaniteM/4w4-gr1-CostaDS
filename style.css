@@ -631,6 +631,18 @@ article h4 {
   flex: 1 0 100%;
 }
 
+.recherche__section {
+  flex-wrap: nowrap;
+  align-items: center;
+  align-items: center;
+  height: 3rem;
+  height: 3rem;
+}
+
+.recherche__input {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 .burger {
   width: 2.8rem;
   margin: 10px;
@@ -715,7 +727,7 @@ Mise en page générale avec display:grid
 .site__entete {
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: antiquewhite;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .site__main {
