@@ -32,8 +32,8 @@
 /* ///////////////////////////////// menu__entete */
 .menu__entete{ // nav
     
-        // position:absolute;
-        // top: 100px;
+        position:absolute;
+        top: 140px;
         // right: 0;
         font-size: 1em;
         transform: translateX(750px);
@@ -43,7 +43,7 @@
         
         
         @media screen and (min-width: $largeur__tablette) {
-           // position : static;
+            position : static;
             transform: translateX(0); 
             
         }
@@ -104,8 +104,11 @@ form {
       }
 /* ---------------------------------------------------------- bouton burger  */     
 .burger {
+    display : flex;
+    align-items: center;
+    justify-content: center;
     border : 1px solid #aaa;
-    display : block; 
+    //display : block; 
     @media screen and (min-width: $largeur__tablette) {
      display : none;
     }

@@ -1,49 +1,26 @@
 <?php /** index par defaut du theme */ ?>
 <?php get_header(); ?>
 
-    <main class="site__main page404">
+<main class="erreur404 site__main">
         
-        <div class="content404">
-            <pres>404.php</pres>
-            <h1>Bienvenue sur 4W4</h1>
-            <h1>Erreur 404</h1>
-            <p class="msg404">Page introuvable, veuillez tenter une recherche</p>
-                <div class="menu__recherche recherche404"> 
-                    <?= get_search_form(); ?>        
-                    </label> 
-                </div> 
+    <h1 class="erreur404__titre">Erreur 404</h1>
             
-            <div class="menu__array">
-                <?php 
-                    // $menu peut prendre les valeurs : "note-4w4" ou "cours"
-                    $menu2 = "note-4w4";
-                    $menu1 = "cours";?>
-                    <div class="titleNav_404">
-                        <?php echo "Nos choix de cours"; ?>
-                    </div>
-                    
-                <?php 
-                        wp_nav_menu(array(
-                        "menu"=>$menu1,
-                        "container"=>"nav"
-                    ))
-                ?>
-                    
-                
-                    <div class="titleNav_404">
-                        <?php echo "Les notes de cours"; ?> 
-                    </div>
-                   
-                <?php    wp_nav_menu(array(
-                        "menu"=>$menu2,
-                        "container"=>"nav"
-                    ))
-                    
-                ?>
-            </div>
+    <h2 class="erreur404__soustitre">Page introuvable, vous pouvez tenter une recherche</h2>
             
-        </div>
-    
+    <?= get_search_form(); ?>  
+    <h2 class="erreur404__soustitre">Nos choix de cours</h2>   
+        <?php 
+                wp_nav_menu(array(
+                "menu"=>"cours",
+                "container_class"=>"erreur__404__menu",
+                "container"=>"nav")); 
+        ?>
+    <h2 class="erreur404__soustitre">Les notes de cours</h2>
+        <?php  wp_nav_menu(array(
+                    "menu"=>"note-4w4",
+                    "container_class"=>"erreur__404__menu",
+                    "container"=>"nav"));   
+        ?>     
     
     </main>
     <?php get_footer(); ?>

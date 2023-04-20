@@ -10,7 +10,7 @@
 </head>
 <?php
 $nouvel_class="";
- if (is_front_page() && is_404()) {
+ if (is_front_page() || is_404()) {
     $nouvel_class = "no-aside";
  }?> 
 
@@ -33,8 +33,13 @@ $nouvel_class="";
                 </label> 
             </div>         
         </section>
-        <h1 class="site__titre"><a  href="<?= bloginfo('url'); ?>"><?= bloginfo('name'); ?></a></h1>
-        <h2 class="site__description"><?= bloginfo('description'); ?></h2>
+                <?php 
+                $classe = "";
+              //  if (is_front_page() == false){$classe="invisible";}
+                ?>
+            <h1 class="site__titre <?= $classe ?>"><a href="<?php  bloginfo('url'); ?>"><?php  bloginfo('name'); ?></a></h1>
+            <h2 class="site__description  <?= $classe ?>"><?php  bloginfo('description'); ?></h2>
+        
 </header>
 
 <?php 

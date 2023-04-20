@@ -7,5 +7,17 @@
 }
 
 .recherche__input{
-    background-color: rgba(0,0,0,.1);
+    background-color: rgba(0, 0, 150, 0.1);
+    outline: none;
+    border : none;
+    font-size: 1.5rem;
+}
+.recherche__icone {
+    //padding : 4px;
+    display : block;
+}
+.recherche__bouton {
+    background-color: rgba(0, 0, 150, 0.1); 
+    border : none;
+    padding : 6px;
 }	

@@ -1,7 +1,10 @@
 /**
 Mise en page générale avec display:grid
 */
-
+html{
+  max-width: 100vw;
+  overflow-x: hidden;
+}
 
 .site__entete {
     grid-area: header;
@@ -55,6 +58,8 @@ Mise en page générale avec display:grid
 
 
 .site {
+    max-width: 100vw;
+    overflow-x: hidden;
     display: grid;
     grid-template-columns: auto;
     grid-template-areas:
