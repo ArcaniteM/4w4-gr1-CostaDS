@@ -35,9 +35,11 @@
         // position:absolute;
         // top: 100px;
         // right: 0;
-        font-size: 3em;
+        font-size: 1em;
         transform: translateX(750px);
         transition: transform .5s;
+        padding-left: 1em;
+        margin-left: 1em;
         
         
         @media screen and (min-width: $largeur__tablette) {
@@ -69,7 +71,7 @@
                     padding : 10px 10px;
                     // text-decoration : none;
                     border-left: 1px solid #b43434;
-                    margin-left: 0.2em;
+                    margin-left: 1em;
                     background-color: wheat;
                 }
             }

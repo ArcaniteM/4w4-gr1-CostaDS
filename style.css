@@ -82,8 +82,6 @@ a {
   background-color: transparent;
   text-decoration: none;
   box-shadow: inset 0 0 0 0 #000000;
-  margin: 0 -0.25rem;
-  padding: 0 0.25rem;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -484,9 +482,11 @@ pre {
 
 /* ///////////////////////////////// menu__entete */
 .menu__entete {
-  font-size: 3em;
+  font-size: 1em;
   transform: translateX(750px);
   transition: transform 0.5s;
+  padding-left: 1em;
+  margin-left: 1em;
 }
 @media screen and (min-width: 800px) {
   .menu__entete {
@@ -516,7 +516,7 @@ pre {
   display: block;
   padding: 10px 10px;
   border-left: 1px solid #b43434;
-  margin-left: 0.2em;
+  margin-left: 1em;
   background-color: wheat;
 }
 
