@@ -20,12 +20,12 @@ html{
     
 }
 
-.site__footer{
-    display: flex;
-    //grid-area: footer;
-    padding: 1rem clamp(1rem, 3vw, 20rem);
-    background-color: rgb(10, 42, 80);
-}
+// .site__footer{
+//     display: flex;
+//     //grid-area: footer;
+//     padding: 1rem clamp(1rem, 3vw, 20rem);
+//     background-color: rgb(10, 42, 80);
+// }
 
 .site__aside{
     grid-area: aside;

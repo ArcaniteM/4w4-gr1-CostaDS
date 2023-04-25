@@ -1,3 +1,24 @@
 .site__footer{
-    display: inline-block;
+    display: flex;
+    //grid-area: footer;
+
+    padding: 1rem clamp(1rem, 3vw, 20rem);
+    background-color: rgb(10, 42, 80);
+
+
+}
+
+.footer__col {
+    width: 30em;
+    width: 30em;
+
+}
+
+.footer__col div {
+    margin-left: 10px;
+    
+}
+
+.footer__col div ul {
+    list-style-type: none;
 }

@@ -456,6 +456,25 @@ pre {
   overflow-x: scroll;
 }
 
+.site__footer {
+  display: flex;
+  padding: 1rem clamp(1rem, 3vw, 20rem);
+  background-color: rgb(10, 42, 80);
+}
+
+.footer__col {
+  width: 30em;
+  width: 30em;
+}
+
+.footer__col div {
+  margin-left: 10px;
+}
+
+.footer__col div ul {
+  list-style-type: none;
+}
+
 /* --------------------------------------------- composant */
 .entete__nav {
   display: flex;
@@ -773,12 +792,6 @@ html {
 .site__main {
   grid-area: main;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-}
-
-.site__footer {
-  display: flex;
-  padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: rgb(10, 42, 80);
 }
 
 .site__aside {
