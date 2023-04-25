@@ -1,0 +1,14 @@
+.menu-evenement-container { //nav
+    .menu { //ul
+        background-color: olive;
+        display: flex;
+        justify-content: space-between;
+
+        .menu-item { //li
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            height: 10vh;
+        }
+    }
+}
