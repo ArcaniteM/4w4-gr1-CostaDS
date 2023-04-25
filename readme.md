@@ -1,4 +1,4 @@
-# Examen Intra
+# Lab 5
 ## 4W4-Conception d'interfaces et développement Web
 ### Auteur : Dan Sebastian Costa
 
@@ -13,8 +13,8 @@
 - Site sur **siteground**
     - https://cidweb29.sg-host.com/
 - Github **eddytuto**    
-- https://github.com/ArcaniteM/4w4-gr1-CostaDS
-- http://localhost:8000/4w4gr1/category/note-4w4/
+- https://github.com/ArcaniteM/4w4-gr1-CostaDS/tree/lab5
+- https://cidweb29.sg-host.com/
 - Pour visualise sur VC installer  « Markdown preview »
 - Pour activer `ctrl-shift-v`
 - https://developer.wordpress.org/themes/basics/
