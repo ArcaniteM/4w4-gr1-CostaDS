@@ -28,7 +28,7 @@ ul li:not(:last-child) {
   
 ul li:before {
     content: "";
-    position: absolute;
+    //position: absolute;
     top: 1.2em;
     left: -30px;
     margin-top: -.9em;
