@@ -762,6 +762,7 @@ article h4 {
 
 .menu-evenement-container {
   width: 100%;
+  align-content: center;
 }
 .menu-evenement-container .menu {
   background-color: olive;
@@ -770,6 +771,7 @@ article h4 {
   border: 1px solid black;
   padding-top: 3%;
   background-image: conic-gradient(#9986ce 20%, #ee4b2b 50%, #ee4b2b 60%, #00c2cb 60%, #a699cb);
+  font-size: 1.5em;
 }
 .menu-evenement-container .menu .menu-item {
   display: flex;
