@@ -1,14 +1,20 @@
 .menu-evenement-container { //nav
+    width: 100%;
+
     .menu { //ul
         background-color: olive;
         display: flex;
         justify-content: space-between;
-
+        border: 1px solid black;
+        padding-top: 3%;
+        background-image: conic-gradient(#9986ce 20%, #ee4b2b 50%, #ee4b2b 60%, #00c2cb 60%, #a699cb);
+        
+        
         .menu-item { //li
             display: flex;
             flex-direction: column;
-            border: 1px solid black;
-            height: 10vh;
+           
+            height: 3vh;
         }
     }
 }

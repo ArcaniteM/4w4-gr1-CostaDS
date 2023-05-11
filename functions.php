@@ -14,11 +14,7 @@ function enfiler_css() {
                         false);       
 }  
 
-
-
-
-
-
+add_theme_support( 'post-thumbnails' );
 add_action( 'wp_enqueue_scripts', 'enfiler_css' );  
 
 /* -------------------------------------- Enregitrement des menus */
