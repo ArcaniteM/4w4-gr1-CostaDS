@@ -6,11 +6,20 @@
         <h1>Bienvenue sur 4W4</h1>
         <h2>Les evenements a venir</h2>
         <section class="blocflex">
-        
-            <?php wp_nav_menu(array(
-                "menu" => "evenement",
-                "container" => "nav"
-            )); ?>
+            
+                <?php wp_nav_menu(array(
+                    "menu" => "evenement",
+                    "container" => "nav"
+                )); ?>
+            
+        </section>
+        <section class="blocflex">         
+            
+                <?php wp_nav_menu(array(
+                    "menu" => "Archive",
+                    "container" => "nav"
+                )); ?>
+            
         </section>
         <section class="blocflex">
             <?php if(have_posts()):

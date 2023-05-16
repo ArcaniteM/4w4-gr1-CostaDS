@@ -2,7 +2,7 @@
     width: 100%;
     align-content: center;
     .menu { //ul
-        background-color: olive;
+        //background-color: olive;
         display: flex;
         justify-content: space-between;
         border: 1px solid black;
@@ -13,7 +13,6 @@
         .menu-item { //li
             display: flex;
             flex-direction: column;
-           
             height: 3vh;
         }
     }
