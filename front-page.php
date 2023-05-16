@@ -13,6 +13,7 @@
                 )); ?>
             
         </section>
+        <h2>Les articles archivés</h2>
         <section class="blocflex">         
             
                 <?php wp_nav_menu(array(
