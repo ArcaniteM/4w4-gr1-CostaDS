@@ -658,6 +658,10 @@ article h4 {
   flex: 1 0 100%;
 }
 
+.bloc__viewport {
+  min-height: 100vh;
+}
+
 .recherche__section {
   flex-wrap: nowrap;
   align-items: center;
@@ -760,12 +764,11 @@ article h4 {
   }
 }
 
-.menu-evenement-container {
+.menu-evenement-container, .menu-bloc-archive-container {
   width: 100%;
   align-content: center;
 }
-.menu-evenement-container .menu {
-  background-color: olive;
+.menu-evenement-container .menu, .menu-bloc-archive-container .menu {
   display: flex;
   justify-content: space-between;
   border: 1px solid black;
@@ -773,10 +776,14 @@ article h4 {
   background-image: conic-gradient(#9986ce 20%, #ee4b2b 50%, #ee4b2b 60%, #00c2cb 60%, #a699cb);
   font-size: 1.5em;
 }
-.menu-evenement-container .menu .menu-item {
+.menu-evenement-container .menu .menu-item, .menu-bloc-archive-container .menu .menu-item {
   display: flex;
   flex-direction: column;
   height: 3vh;
+}
+
+.menu-bloc-archive-container .menu {
+  background-image: conic-gradient(#a699cb 20%, #00c2cb 50%, #ee4b2b 60%, #ee4b2b 60%, #9986ce);
 }
 
 /* --------------------------------------------- layout */

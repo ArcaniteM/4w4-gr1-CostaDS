@@ -1,4 +1,4 @@
-.menu-evenement-container { //nav
+.menu-evenement-container, .menu-bloc-archive-container { //nav
     width: 100%;
     align-content: center;
     .menu { //ul
@@ -15,5 +15,11 @@
             flex-direction: column;
             height: 3vh;
         }
+    }
+}
+
+.menu-bloc-archive-container {
+    .menu { //ul
+        background-image: conic-gradient(#a699cb 20%, #00c2cb 50%, #ee4b2b 60%, #ee4b2b 60%, #9986ce);
     }
 }

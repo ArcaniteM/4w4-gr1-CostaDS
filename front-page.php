@@ -16,7 +16,7 @@
         <section class="blocflex">         
             
                 <?php wp_nav_menu(array(
-                    "menu" => "Archive",
+                    "menu" => "bloc-archive",
                     "container" => "nav"
                 )); ?>
             
