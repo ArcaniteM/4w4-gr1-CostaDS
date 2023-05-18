@@ -470,17 +470,43 @@ pre {
     display: block;
   }
 }
+.site__footer .footer__col:first-of-type {
+  width: 20vw;
+}
+.site__footer .footer__col:first-of-type .sidebar {
+  position: relative;
+  width: 100%;
+}
+.site__footer .footer__col:first-of-type .sidebar::after {
+  content: "";
+  display: block;
+  padding-bottom: 75%;
+}
+.site__footer .footer__col:first-of-type .sidebar .widget_block {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.site__footer .footer__col:first-of-type .sidebar figure,
+.site__footer .footer__col:first-of-type .sidebar .wp-block-embed__wrapper,
+.site__footer .footer__col:first-of-type .sidebar iframe {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
 
+/*
 #block-7 {
-  width: auto;
-  height: 20px;
-}
-@media screen and (max-width: 700px) {
-  #block-7 {
-    display: none;
-  }
-}
+    width: auto;
+    height: 20px;
+    @media screen and (max-width: $largeur__mobile) {
+        display: none;
+    }
 
+}
+*/
 .footer__col {
   width: 30em;
 }
