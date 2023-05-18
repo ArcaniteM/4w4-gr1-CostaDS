@@ -4,20 +4,34 @@
 
     padding: 1rem clamp(1rem, 3vw, 20rem);
     background-color: rgb(10, 42, 80);
+    @media screen and (max-width: $largeur__tablette) {
+        display: block;
+    }
+    @media screen and (max-width: $largeur__mobile) {
+        display: block;
+    }
 
+}
+
+#block-7 {
+    width: auto;
+    height: 20px;
+    @media screen and (max-width: $largeur__mobile) {
+        display: none;
+    }
 
 }
 
 .footer__col {
     width: 30em;
-
+    
 }
 
 .footer__col div {
     margin-left: 10px;
-    
 }
 
 .footer__col div ul {
     list-style-type: none;
+
 }

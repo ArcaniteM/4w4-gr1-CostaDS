@@ -460,6 +460,26 @@ pre {
   padding: 1rem clamp(1rem, 3vw, 20rem);
   background-color: rgb(10, 42, 80);
 }
+@media screen and (max-width: 800px) {
+  .site__footer {
+    display: block;
+  }
+}
+@media screen and (max-width: 700px) {
+  .site__footer {
+    display: block;
+  }
+}
+
+#block-7 {
+  width: auto;
+  height: 20px;
+}
+@media screen and (max-width: 700px) {
+  #block-7 {
+    display: none;
+  }
+}
 
 .footer__col {
   width: 30em;
