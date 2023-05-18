@@ -18,6 +18,7 @@ $nouvel_class="";
     <header class="site__entete">
         <section class="entete__nav">
             <?php the_custom_logo(); ?> 
+            <br>
             <div class="menu__recherche">
                 <input type="checkbox"  id="chkBurger"> 
                 <?php  wp_nav_menu(array( 

@@ -16,7 +16,7 @@ ol {
 ul {
     list-style-type: circle;
     display: block;
-    margin-left: -25px;
+    //margin-left: -25px;
     @media screen and (max-width: 699px) {
         margin-left: -10px;
     }
