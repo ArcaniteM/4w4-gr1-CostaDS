@@ -1,3 +1,4 @@
+
 <?php
 /**
  * «template part» gabarit categorie-cours permet d'afficher un article «bloc»

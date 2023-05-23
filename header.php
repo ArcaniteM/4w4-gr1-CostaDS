@@ -9,10 +9,20 @@
     <?php wp_head(); ?>
 </head>
 <?php
-$nouvel_class="";
- if (is_front_page() || is_404()) {
-    $nouvel_class = "no-aside";
- }?> 
+    $nouvel_class="";
+    //$nouvelle_classe = "";
+    if  (is_front_page() || is_404() ||
+        (! in_category("cours") && ! in_category("note-4w4") && ! in_category("ef")) ){
+        $nouvel_class = 'no-aside';
+        }
+    if (is_page_template('template-atelier.php')) {
+        $nouvel_class = 'epreuve-finale';
+    }
+
+    /*if (is_front_page() || is_404()) {
+        $nouvel_class = "no-aside";
+    }*/
+?> 
 
 <body class="custom-background site <?= $nouvel_class ?>  ">
     <header class="site__entete">
