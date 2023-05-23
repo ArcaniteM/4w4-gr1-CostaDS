@@ -10,7 +10,7 @@
 </head>
 <?php
 $nouvel_class="";
- if (is_front_page() || is_404()/* || is_categorie_ef()*/) {
+ if (is_front_page() || is_404()) {
     $nouvel_class = "no-aside";
  }?> 
 
