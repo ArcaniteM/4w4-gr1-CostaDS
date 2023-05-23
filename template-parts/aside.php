@@ -4,7 +4,9 @@
 */
 ?>
 <aside class="site__aside">
+    
     <h3>Menu secondaire</h3>
+    
     <?php 
         // $menu peut prendre les valeurs : "note-4w4" ou "cours"
         $menu = "note-4w4";
