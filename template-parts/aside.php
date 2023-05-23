@@ -11,6 +11,9 @@
         if(in_category("cours")){
             $menu = "cours";
         }
+        if(in_category("ef")){
+            $menu = "Atelier";
+        }
         echo $menu;
         wp_nav_menu(array(
         "menu"=>$menu,
