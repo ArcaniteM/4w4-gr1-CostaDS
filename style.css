@@ -862,22 +862,13 @@ html {
 
 .site__aside {
   grid-area: aside;
-  padding-left: 1.5em;
   background-color: rgb(250, 210, 160);
   font-size: 1.7vw;
   text-decoration: none;
   border-left: 0.5em solid red;
 }
 
-.site__aside nav ul {
-  padding-left: 0;
-  margin-bottom: 1em;
-  color: #b43434;
-  width: fit-content;
-}
-
 .site__aside nav ul :hover {
-  padding: 0.1em;
   box-shadow: inset 5000px 0 0 0 #b43434;
   color: bisque;
 }
@@ -916,6 +907,32 @@ html {
     grid-template-columns: auto;
     grid-template-areas: "header" "main" "footer";
   }
+}
+
+.site__aside_atelier {
+  grid-area: aside;
+  padding-left: 1.5em;
+  background-color: rgb(250, 210, 160);
+  font-size: 1.7vw;
+  text-decoration: none;
+  border-left: 0.5em solid red;
+}
+
+.site__aside_atelier nav ul {
+  padding-left: 0;
+  margin-bottom: 1em;
+  color: #b43434;
+  width: fit-content;
+}
+
+.site__aside_atelier nav ul :hover {
+  padding: 0.1em;
+  box-shadow: inset 5000px 0 0 0 #b43434;
+  color: bisque;
+}
+
+.site__aside_atelier nav ul li {
+  border: 2px solid #b43434;
 }
 
 main.erreur404 {

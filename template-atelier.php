@@ -1,10 +1,12 @@
 <?php 
 /**
- * template name: Evenement
+ * template name: Atelier
  */
 ?>
 
-<?php get_header(); ?>
+<?php get_header(); 
+get_template_part("template-parts/aside-atelier"); 
+?>
 <main class="site__main">
     
     <?php if ( have_posts() ) : the_post(); ?>
